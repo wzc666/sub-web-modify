@@ -891,7 +891,8 @@ export default {
       form: {
         sourceSubUrl: "",
         clientType: "",
-        customBackend: this.getUrlParam() == "" ? "https://url.v1.mk" : this.getUrlParam(),
+        // customBackend: this.getUrlParam() == "" ? "https://url.v1.mk" : this.getUrlParam(),
+        customBackend: "http://198.89.125.250:16677",
         shortType: "https://v1.mk/short",
         remoteConfig: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online_Full_NoAuto.ini",
         excludeRemarks: "",
@@ -948,8 +949,9 @@ export default {
     this.isPC = this.$getOS().isPc;
   },
   mounted() {
-    this.tanchuang();
+    // this.tanchuang();
     this.form.clientType = "clash";
+    this.from.
     this.getBackendVersion();
     this.anhei();
     let lightMedia = window.matchMedia('(prefers-color-scheme: light)');
